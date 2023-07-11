@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NLayer.Core
+namespace NLayer.Core.Models
 {
     public class Category : BaseEntity
     {
@@ -14,7 +14,7 @@ namespace NLayer.Core
         public ICollection<Product> Products { get; set; }
         public Category()
         {
-                Products = new List<Product>();
+            Products = new List<Product>();
         }
     }
 }
