@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NLayer.Service
+namespace NLayer.Service.Mapping
 {
     public class MapProfile : Profile
     {
@@ -17,6 +17,8 @@ namespace NLayer.Service
             CreateMap<Category, CategoryDto>().ReverseMap();
             CreateMap<ProductFeature, ProdutcFeatureDto>().ReverseMap();
             CreateMap<ProductUpdateDto, Product>();
+            CreateMap<Product,ProductWithCategoryDto>();
+            CreateMap<Category,CategoryWithProductsDto>();
         }
     }
 }
