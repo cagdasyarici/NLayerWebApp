@@ -1,11 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using NLayer.Core.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NLayer.Repository.Seeds
 {
@@ -19,7 +14,7 @@ namespace NLayer.Repository.Seeds
                 CategoryId = 1,
                 Name = "Kalem1 ",
                 Price = 100,
-                Stock =20,
+                Stock = 20,
                 CreatedDate = DateTime.Now,
             },
             new Product
@@ -36,7 +31,7 @@ namespace NLayer.Repository.Seeds
                 Id = 3,
                 CategoryId = 1,
                 Name = "Kalem 3",
-                Stock=60,
+                Stock = 60,
                 Price = 600,
                 CreatedDate = DateTime.Now,
             },
@@ -57,7 +52,7 @@ namespace NLayer.Repository.Seeds
                 Stock = 320,
                 Price = 6600,
                 CreatedDate = DateTime.Now,
-            }); 
+            });
         }
     }
 }
